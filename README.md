@@ -15,7 +15,7 @@
 2. [🌐 Solução — Agroviva web](#-Solução--agroviva-web)
 3. [💻 Tecnologias utilizadas](#-Tecnologias-utilizadas) 
 4. [📑 Páginas do projeto](#-Páginas-do-projeto)  
-5. [🤝 Impacto social](#-Impacto-social)  
+5. [🤝 Impacto social](#-Impacto)  
 6. [👥 Equipe](#-Equipe)  
 
 ---  
@@ -67,7 +67,7 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores famil
 
 ---
 
-## 🤝 Impacto social
+## 🤝 Impacto
 
 - Empoderamento de pequenas comunidades e agricultores
 - Linguagem simples e inclusiva no front-end
