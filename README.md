@@ -11,8 +11,8 @@
 
 ## 📑 Índice
 
-1. [💡 Descrição do projeto](#-Descrição-do-projeto)  
-2. [🎯 Escolha do tema](#-Escolha-do-tema)
+<!-- 1. [💡 Descrição do projeto](#-Descrição-do-projeto)  
+2. [🎯 Escolha do tema](#-Escolha-do-tema) -->
 3. [⚠️ Problema](#-Problema)
 4. [🌐 Solução — Agroviva web](#-Solução--agroviva-web)
 5. [📈 Impacto esperado](#Impacto-esperado)
@@ -23,7 +23,7 @@
 
 ---
 
-## 💡 Descrição do Desafio
+<!--## 💡 Descrição do Desafio
 
 
 A FIAP propôs soluções para **repensar o futuro do trabalho**, com foco em:
@@ -35,11 +35,11 @@ A FIAP propôs soluções para **repensar o futuro do trabalho**, com foco em:
 - 🔹 IA como parceira estratégica  
 - 🔹 Novas formas de colaboração e carreira
 
----
+---  -->
 
 ## ⚠️ Problema 
-
-Mercados alimentares amplos frequentemente deixam agricultores familiares à margem, com pouca visibilidade e dependência de intermediários. Ao mesmo tempo, consumidores locais perdem acesso direto a alimentos frescos com preços acessíveis
+O Brasil enfrenta dois desafios interligados: a insegurança alimentar e as ineficiências na agricultura familiar. Segundo o SOFI 2025, 16,9% da população vive algum nível de insegurança alimentar, incluindo milhões em situação grave, com dificuldade de acesso regular a alimentos, sobretudo frescos e nutritivos.
+Ao mesmo tempo, a agricultura familiar, que representa 77% dos estabelecimentos rurais e produz cerca de 60% dos alimentos consumidos no país, sofre com falta de assistência técnica, orientação climática, manejo adequado e canais de comercialização. Isso contribui para altas perdas e desperdício, estimadas em 26–27 milhões de toneladas por ano, agravando a fome e dificultando o acesso da população aos alimentos.
 
 ---
 
