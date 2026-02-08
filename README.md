@@ -12,13 +12,13 @@
 ## 📑 Índice
 
 1. [💡 Descrição do projeto](#-Descrição-do-projeto)  
-2. [🎯 Escolha do tema](#-Escolha-do-tema)  
-3. [🌐 Solução proposta — SkillsUp](#-Solução-proposta--skillsup)
-4. [💻 Tecnologias utilizadas](#-Tecnologias-utilizadas) 
-5. [⚡ Funcionalidades principais](#-Funcionalidades-principais)  
-6. [🔄 Fluxos de usuário](#-Fluxos-de-usuário)  
-7. [🎨 UX & componentes interativos](#-Ux--componentes-interativos)  
-8. [♿ Acessibilidade & integrações](#-Acessibilidade--integrações)  
+2. [🎯 Escolha do tema](#-Escolha-do-tema)
+3. [⚠️ Problema](#-Problema)
+4. [🌐 Solução — Agroviva web](#-Solução--agroviva-web)
+5. [📈 Impacto esperado](#Impacto-esperado)
+6. [💻 Tecnologias utilizadas](#-Tecnologias-utilizadas) 
+7. [📑 Páginas do projeto](#-Páginas-do-projeto)  
+8. [🤝 Impacto social](#-Impacto-social)  
 9. [👥 Equipe](#-Equipe)  
 
 ---
@@ -47,12 +47,11 @@ Mercados alimentares amplos frequentemente deixam agricultores familiares à mar
 
 O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores locais a comunidades urbanas, promovendo consumo consciente, valorizando a produção local e reduzindo intermediários. Por meio de um ambiente digital acessível, agricultores podem oferecer seus produtos diretamente, enquanto consumidores descobrem e apoiam alimentos de origem próxima, fortalecendo o impacto social e as economias locais.
 
-### 📈 Impacto
-- 📚 Democratiza o acesso ao conhecimento  
-- 🤝 Estimula colaboração, empatia e comunicação  
-- ⚖️ Reduz desigualdades educacionais  
-- 🏆 Transforma aprendizado em capital social  
-- 🔗 Cria comunidades de crescimento conjunto
+### 📈 Impacto esperado
+- 🌾 Fortalecimento de produtores rurais locais
+- 🛒 Acesso facilitado a alimentos frescos com maior transparência
+- 🤝 Valorização de práticas sustentáveis
+- 👥 Construção de comunidades mais conectadas ao ciclo da produção alimentar
 
 ---
 ## 💻 Tecnologias utilizadas
@@ -63,72 +62,38 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores locai
 
 ---
 
-## ⚡ Funcionalidades Principais
+## 📑 Páginas do projeto
 
-### 💰 Sistema de Créditos — SkillsCoins
-- Visualização do saldo de créditos  
-- Alertas de saldo insuficiente  
-- Salvar perfil concede **+5 SkillsCoins**
+### [🏠 Página inicial](https://agrowebviva.vercel.app/) 
+<img width="1896" height="663" alt="image" src="https://github.com/user-attachments/assets/f4ff660f-c30a-4ae0-9921-2b12ef263c11" />
+<img width="1892" height="510" alt="image" src="https://github.com/user-attachments/assets/e0b9f05f-4908-4f39-bd3f-1c2c1fc18e1a" />
+<img width="1899" height="733" alt="image" src="https://github.com/user-attachments/assets/e1c82c72-fb31-42d1-89f2-025e508ec3c9" />
+<img width="1895" height="748" alt="image" src="https://github.com/user-attachments/assets/cc2f39b7-20f0-480a-9439-6f7c19a56dea" />
 
-### 🧑‍🎓 Onboarding / Perfil
-- Cadastro: nome, áreas para aprender e ensinar  
-- Modal de confirmação e ganho de créditos
+### [🌍 Impacto social](https://agrowebviva.vercel.app/Apresentacao.html) 
+<img width="1895" height="462" alt="image" src="https://github.com/user-attachments/assets/356b879f-3734-4f33-b613-959a04b6b836" />
+<img width="1891" height="805" alt="image" src="https://github.com/user-attachments/assets/fae30fef-5845-475c-869c-8fd362fd3a05" />
+<img width="1896" height="556" alt="image" src="https://github.com/user-attachments/assets/bcb3f3ca-d99d-4098-a62a-2af07d5199db" />
 
-### 📌 Tela “Escolha”
-- Opções: **Aprender Algo Novo**, **Ensinar Algo**, **Minhas Aulas**
+### [👩‍🌾 Agricultor](https://agrowebviva.vercel.app/agricultor.html) 
+<img width="1896" height="874" alt="image" src="https://github.com/user-attachments/assets/c0d1cc8c-8990-42be-a0db-39cebe68f9fe" />
+<img width="1897" height="530" alt="image" src="https://github.com/user-attachments/assets/0ed2c214-a4f6-400a-b089-50dfb644799a" />
 
-### 🎴 Cards Interativos
-- Aprenda o que quiser  
-- Ensine o que domina  
-- Ganhe créditos  
-- Efeito *flip* frente ↔ verso
+### [🧑‍🤝‍🧑 Comunidade](https://agrowebviva.vercel.app/Comunidade.html) 
+<img width="1892" height="844" alt="image" src="https://github.com/user-attachments/assets/557d1854-03b7-4aa6-8520-cee34aefb684" />
+<img width="1895" height="748" alt="image" src="https://github.com/user-attachments/assets/cc2f39b7-20f0-480a-9439-6f7c19a56dea" />
 
-### 🧑‍🏫 Oferta de Aula (Tutores)
-- Formulário: nome, assunto, categoria, descrição e horários  
-- Publicação atualiza dashboard do tutor
-
-### 🔍 Escolha de Mentor (Alunos)
-- Busca com autocomplete  
-- Grid de tutores com nome, categoria, descrição e avaliação  
-- Botões: **Agendar** e **Ver Descrição**
-
-### 🗓️ Agendamento
-- Modal para seleção de horário  
-- Consome 1 SkillsCoin quando aplicável  
-- Feedback via animação Lottie  
-- Proteção de ações: login obrigatório
+### [📞 Fale conosco](https://agrowebviva.vercel.app/FaleConosco.html) 
+<img width="1897" height="871" alt="image" src="https://github.com/user-attachments/assets/fb85d661-d781-4021-ad77-12339f5faa0c" />
 
 ---
 
-## 🔄 Fluxos de Usuário
+## 🤝 Impacto social
 
-1. **Onboarding → Perfil → Tela de Escolha**  
-   - Preenche perfil → salva → recebe +5 SkillsCoins → redireciona para Tela de Escolha
-
-2. **Aluno: Buscar → Ver Tutor → Agendar → Confirmar**  
-   - Busca tutor → ver descrição → agendar → confirmar  
-   - Saldo suficiente → consumo de 1 SkillsCoin; saldo insuficiente → modal “Créditos Esgotados”
-
-3. **Tutor: Oferecer Aula → Publicar → Receber Agendamentos**  
-   - Entrar em “Oferecer Aula” → preencher formulário → publicar → dashboard atualizado
-
----
-
-## 🎨 UX & Componentes Interativos
-
-- Carrossel Hero com barra de progresso e setas  
-- Cards flip com CTA  
-- Botões de horário com estado selecionado  
-- Modais com Lottie para feedbacks  
-- Animações suaves de entrada e transição
-
----
-
-## ♿ Acessibilidade & Integrações
-
-- **VLibras**: tradução para Libras  
-- **UserWay**: widget de acessibilidade  
-- **Lottie**: animações para feedback de ações
+- Foco no consumo consciente e educação
+- Empoderamento de pequenas comunidades e agricultores
+- Linguagem simples e inclusiva no front-end
+- Estrutura pensada para facilitar acesso rápido às informações de missão e propósito
 
 ---
 
