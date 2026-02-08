@@ -37,7 +37,7 @@ A FIAP propôs soluções para **repensar o futuro do trabalho**, com foco em:
 
 ---
 
-## ⚠️  Problema 
+## ⚠️ Problema 
 
 Mercados alimentares amplos frequentemente deixam agricultores familiares à margem, com pouca visibilidade e dependência de intermediários. Ao mesmo tempo, consumidores locais perdem acesso direto a alimentos frescos com preços acessíveis
 
@@ -47,7 +47,7 @@ Mercados alimentares amplos frequentemente deixam agricultores familiares à mar
 
 O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores locais a comunidades urbanas, promovendo consumo consciente, valorizando a produção local e reduzindo intermediários. Por meio de um ambiente digital acessível, agricultores podem oferecer seus produtos diretamente, enquanto consumidores descobrem e apoiam alimentos de origem próxima, fortalecendo o impacto social e as economias locais.
 
-### 📈 Impacto esperado
+## 📈 Impacto esperado
 - 🌾 Fortalecimento de produtores rurais locais
 - 🛒 Acesso facilitado a alimentos frescos com maior transparência
 - 🤝 Valorização de práticas sustentáveis
@@ -85,6 +85,7 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores locai
 
 ### [📞 Fale conosco](https://agrowebviva.vercel.app/FaleConosco.html) 
 <img width="1897" height="871" alt="image" src="https://github.com/user-attachments/assets/fb85d661-d781-4021-ad77-12339f5faa0c" />
+<img width="1895" height="748" alt="image" src="https://github.com/user-attachments/assets/cc2f39b7-20f0-480a-9439-6f7c19a56dea" />
 
 ---
 
