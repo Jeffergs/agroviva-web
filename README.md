@@ -15,7 +15,7 @@
 2. [🌐 Solução — Agroviva web](#-Solução--agroviva-web)
 3. [💻 Tecnologias utilizadas](#-Tecnologias-utilizadas) 
 4. [📑 Páginas do projeto](#-Páginas-do-projeto)  
-5. [🤝 Impacto social](#-Impacto)  
+5. [🤝 Impacto](#-Impacto)  
 6. [👥 Equipe](#-Equipe)  
 
 ---  
