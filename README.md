@@ -11,33 +11,16 @@
 
 ## 📑 Índice
 
-<!-- 1. [💡 Descrição do projeto](#-Descrição-do-projeto)  
-2. [🎯 Escolha do tema](#-Escolha-do-tema) -->
-3. [⚠️ Problema](#-Problema)
-4. [🌐 Solução — Agroviva web](#-Solução--agroviva-web)
-5. [📈 Impacto esperado](#Impacto-esperado)
-6. [💻 Tecnologias utilizadas](#-Tecnologias-utilizadas) 
-7. [📑 Páginas do projeto](#-Páginas-do-projeto)  
-8. [🤝 Impacto social](#-Impacto-social)  
-9. [👥 Equipe](#-Equipe)  
+1. [🛑 Problema](#-Problema)
+2. [🌐 Solução — Agroviva web](#-Solução--agroviva-web)
+3. [💻 Tecnologias utilizadas](#-Tecnologias-utilizadas) 
+4. [📑 Páginas do projeto](#-Páginas-do-projeto)  
+5. [🤝 Impacto social](#-Impacto-social)  
+6. [👥 Equipe](#-Equipe)  
 
----
+---  
 
-<!--## 💡 Descrição do Desafio
-
-
-A FIAP propôs soluções para **repensar o futuro do trabalho**, com foco em:
-
-- 🔹 Aprendizagem contínua  
-- 🔹 Reskilling e upskilling  
-- 🔹 Inclusão produtiva  
-- 🔹 Bem-estar e saúde mental  
-- 🔹 IA como parceira estratégica  
-- 🔹 Novas formas de colaboração e carreira
-
----  -->
-
-## ⚠️ Problema 
+## 🛑 Problema 
 O Brasil enfrenta dois desafios interligados: a insegurança alimentar e as ineficiências na agricultura familiar. Segundo o SOFI 2025, 16,9% da população vive algum nível de insegurança alimentar, incluindo milhões em situação grave, com dificuldade de acesso regular a alimentos, sobretudo frescos e nutritivos.
 Ao mesmo tempo, a agricultura familiar, que representa 77% dos estabelecimentos rurais e produz cerca de 60% dos alimentos consumidos no país, sofre com falta de assistência técnica, orientação climática, manejo adequado e canais de comercialização. Isso contribui para altas perdas e desperdício, estimadas em 26–27 milhões de toneladas por ano, agravando a fome e dificultando o acesso da população aos alimentos.
 
@@ -45,15 +28,10 @@ Ao mesmo tempo, a agricultura familiar, que representa 77% dos estabelecimentos 
 
 ## 🌐 Solução — Agroviva web
 
-O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores locais a comunidades urbanas, promovendo consumo consciente, valorizando a produção local e reduzindo intermediários. Por meio de um ambiente digital acessível, agricultores podem oferecer seus produtos diretamente, enquanto consumidores descobrem e apoiam alimentos de origem próxima, fortalecendo o impacto social e as economias locais.
-
-## 📈 Impacto esperado
-- 🌾 Fortalecimento de produtores rurais locais
-- 🛒 Acesso facilitado a alimentos frescos com maior transparência
-- 🤝 Valorização de práticas sustentáveis
-- 👥 Construção de comunidades mais conectadas ao ciclo da produção alimentar
+O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores familiares a em situação de vulnerabilidade alimentar, reduzindo desperdícios e facilitando o acesso a alimentos.
 
 ---
+
 ## 💻 Tecnologias utilizadas
 - 📄 HTML 5 para estruturar o conteúdo do site
 - 🎨 CSS 3 para personalizar alguns componentes do site e ajustes de responsividade
@@ -91,16 +69,13 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores locai
 
 ## 🤝 Impacto social
 
-- Foco no consumo consciente e educação
 - Empoderamento de pequenas comunidades e agricultores
 - Linguagem simples e inclusiva no front-end
-- Estrutura pensada para facilitar acesso rápido às informações de missão e propósito
+- Estrutura pensada para facilitar acesso rápido às informações 
 
 ---
 
-
 ## 👥 Equipe
-
 
 <div align="center">
 
