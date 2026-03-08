@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom"
+
 function Navbar(){
     return(
-        <h1>Navbar</h1>
+        
+        <>
+        <Link to="/">Home</Link>
+        <Link to="impacto">Impacto social</Link>
+        <Link to="beneficios">Benefícios</Link>
+        <Link to="fale">Fale Conosco</Link>        
+        </>
 
     )
 }
