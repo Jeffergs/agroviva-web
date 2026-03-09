@@ -8,3 +8,19 @@
   transform: translateY(-3px);
   box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
+
+.agri-icon{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.15);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
+}
+
+.agri-icon i{
+  font-size:1.5rem;
+  color:white;
+}

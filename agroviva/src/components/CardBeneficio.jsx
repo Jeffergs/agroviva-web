@@ -3,7 +3,9 @@ import "./CardBeneficio.css"
 function CardBeneficio({ icone, alt, titulo, descricao }) {
   return (
     <div className="agri-card d-flex align-items-start gap-3 p-3 rounded-3 h-100">
-      <img src={icone} alt={alt} width="48" />
+      <div className="agri-icon">
+        <i className={`bi ${icone}`}></i>
+      </div>
 
       <div>
         <h5 className="fw-semibold">{titulo}</h5>
