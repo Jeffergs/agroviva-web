@@ -12,18 +12,21 @@ function Beneficios(){
             </h1>
         </div>    
            
-        <section>
+        <section className="container">
+            <div className="row g-4">
 
         {beneficiosAgroviva.map((item, index) => (
-            <CardBeneficio
-            key={index}
+            <div className="col-12 col-md-6 col-lg-6" key={index}>
+            <CardBeneficio            
             icone={item.icone}
             alt={item.alt}
             titulo={item.titulo}
             descricao={item.descricao}
             />
+            </div>
             
         ))}
+        </div>
 
         </section>
     </main>

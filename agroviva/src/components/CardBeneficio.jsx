@@ -1,6 +1,8 @@
+import "./CardBeneficio.css"
+
 function CardBeneficio({ icone, alt, titulo, descricao }) {
   return (
-    <div className="agri-card d-flex align-items-start gap-3 mb-3">
+    <div className="agri-card d-flex align-items-start gap-3 p-3 rounded-3 h-100">
       <img src={icone} alt={alt} width="48" />
 
       <div>
