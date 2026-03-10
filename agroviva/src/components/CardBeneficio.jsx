@@ -7,7 +7,7 @@ function CardBeneficio({ icone, alt, titulo, descricao }) {
         <i className={`bi ${icone}`}></i>
       </div>
 
-      <div>
+      <div className="flex-grow-1 d-flex flex-column justify-content-center">
         <h5 className="fw-semibold">{titulo}</h5>
         <p className="mb-0">{descricao}</p>
       </div>
