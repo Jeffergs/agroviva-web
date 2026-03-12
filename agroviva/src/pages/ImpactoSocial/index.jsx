@@ -2,7 +2,7 @@ import IphoneMockup from "../../components/IphoneMockup";
 import ImpactoSocialPropostas from "../../components/ImpactoSocialPropostas";
 import "./impacto-social.css";
 
-export function ImpactoSocial() {
+export default function ImpactoSocial() {
   return (
     <main>
       <section className="header">
