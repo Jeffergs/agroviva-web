@@ -65,11 +65,11 @@ function FaleConosco() {
       mensagem: ""
     });
   }
+
   return (
     <section className="fale-conosco">
       <div className="container py-5">
         <div className="row align-items-start">
-
           {/* COLUNA ESQUERDA - FAQ */}
           <div className="col-md-6 fale">
             <h1 className="fw-bold mb-4 titulo">
@@ -169,7 +169,7 @@ function FaleConosco() {
                   </h2>
                   <div id="resposta5" className="accordion-collapse collapse">
                     <div className="accordion-body">
-                      A AgroViva realiza a certificação dos produtores com base em critérios de boas práticas agrícolas, responsabilidade ambiental e qualidade dos produtos. O objetivo é garantir que toda a produção seja segura, sustentável e alinhada aos valores da plataforma.
+                      A AgroViva realiza a certificação dos produtores com base em critérios de boas práticas agrícolas, responsabilidade ambiental e qualidade dos produtos.
                     </div>
                   </div>
                 </div>
@@ -184,17 +184,18 @@ function FaleConosco() {
                 Mensagem enviada com sucesso!
               </div>
             )}
-            <div className="card shadow p-4">
+            <div className="card shadow">
               <h4 className="mb-4 fw-bold">
                 Entre em contato conosco
               </h4>
               <form onSubmit={handleSubmit}>
+                {/* NOME */}
                 <div className="mb-3">
                   <label className="form-label">Nome Completo</label>
                   <input
                     type="text"
                     name="nome"
-                    className={`form-control ${erros.nome ? "is-invalid" : ""}`}
+                    className={`form-control input-icon nome ${erros.nome ? "is-invalid" : ""}`}
                     value={form.nome}
                     onChange={handleChange}
                     placeholder="Seu nome completo"
@@ -203,12 +204,13 @@ function FaleConosco() {
                     {erros.nome}
                   </div>
                 </div>
+                {/* EMAIL */}
                 <div className="mb-3">
                   <label className="form-label">E-mail</label>
                   <input
                     type="email"
                     name="email"
-                    className={`form-control ${erros.email ? "is-invalid" : ""}`}
+                    className={`form-control input-icon email ${erros.email ? "is-invalid" : ""}`}
                     value={form.email}
                     onChange={handleChange}
                     placeholder="seuemail@exemplo.com"
@@ -217,12 +219,13 @@ function FaleConosco() {
                     {erros.email}
                   </div>
                 </div>
+                {/* TELEFONE */}
                 <div className="mb-3">
                   <label className="form-label">Telefone</label>
                   <input
                     type="tel"
                     name="telefone"
-                    className={`form-control ${erros.telefone ? "is-invalid" : ""}`}
+                    className={`form-control input-icon telefone ${erros.telefone ? "is-invalid" : ""}`}
                     value={form.telefone}
                     onChange={handleChange}
                     placeholder="(11) 99999-9999"
@@ -231,6 +234,7 @@ function FaleConosco() {
                     {erros.telefone}
                   </div>
                 </div>
+                {/* PERFIL */}
                 <div className="mb-3">
                   <label className="form-label">Escolha seu perfil</label>
                   <select
@@ -247,6 +251,7 @@ function FaleConosco() {
                     {erros.tipo}
                   </div>
                 </div>
+                {/* MOTIVO */}
                 <div className="mb-3">
                   <label className="form-label">Motivo do contato</label>
                   <select
@@ -263,6 +268,7 @@ function FaleConosco() {
                     {erros.contato}
                   </div>
                 </div>
+                {/* MENSAGEM */}
                 <div className="mb-3">
                   <label className="form-label">Mensagem</label>
                   <textarea
@@ -273,14 +279,18 @@ function FaleConosco() {
                     value={form.mensagem}
                     onChange={handleChange}
                     placeholder="Digite sua mensagem"
-                />
+                  />
                   <div className="invalid-feedback">
                     {erros.mensagem}
                   </div>
+                  <div className="char-counter">
+                    {form.mensagem.length}/500
+                  </div>
                 </div>
+                {/* BOTÃO */}
                 <button
                   type="submit"
-                  className="btn btn-success w-100"
+                  className="btn btn-success"
                   style={{ fontWeight: "800" }}
                 >
                   Enviar

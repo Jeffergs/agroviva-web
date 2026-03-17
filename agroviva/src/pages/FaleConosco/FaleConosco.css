@@ -5,38 +5,12 @@ body {
   color: #333;
 }
 
-/* WIDGET ACESSIBILIDADE */
-#userwayAccessibilityIcon,
-.userway_buttons_wrapper,
-.userway-widget,
-.userway-accessibility-widget {
-  position: fixed !important;
-  right: 10px !important;
-  bottom: 20px !important;
-  top: auto !important;
-  left: auto !important;
-  margin: 0 !important;
-  z-index: 9999 !important;
-}
-
-@media (max-width: 768px) {
-  #userwayAccessibilityIcon,
-  .userway_buttons_wrapper,
-  .userway-widget,
-  .userway-accessibility-widget {
-    right: 10px !important;
-    bottom: 10px !important;
-  }
-}
-
 /* AREA PRINCIPAL DA PÁGINA */
-
 main{
   min-height:80vh;
 }
 
 /* PÁGINA FALE CONOSCO */
-
 .fale-conosco {
   padding-top: 120px;
   padding-bottom: 60px;
@@ -44,7 +18,6 @@ main{
 }
 
 /* TÍTULO */
-
 .titulo{
   font-size: clamp(28px, 4vw + 8px, 50px);
   text-align: center;
@@ -52,7 +25,6 @@ main{
 }
 
 /* SUBTÍTULO */
-
 .subtitulo{
   text-align: center;
   font-size: clamp(14px, 1.4vw + 8px, 26px);
@@ -60,118 +32,118 @@ main{
 }
 
 /* COLUNA ESQUERDA */
-
 .fale{
   margin-top: 40px;
 }
 
 /* FORMULÁRIO */
-
 .form{
-  margin-top: 40px;
+  margin-top:40px;
 }
 
-.card{
-  border-radius: 15px;
-  border: none;
-}
-
-.card h4{
-  text-align: center;
-}
-
-/* ACCORDION FAQ */
-
-.accordion-item {
-  background: white;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  border: none;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-}
-
-.accordion-button {
-  border-radius: 10px;
-  font-weight: 500;
-  color: #333;
-}
-
-.accordion-button:not(.collapsed) {
-  color: #006330;
-  background-color: #e9f5e9;
-  box-shadow: none;
-}
-
-.accordion-button::after {
-  filter: invert(42%) sepia(91%) saturate(2776%) hue-rotate(98deg) brightness(80%) contrast(120%);
-}
-
-/* PARÁGRAFOS */
-
-p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-/* BOTÃO ENVIAR */
-
-.btn-success{
-  background-color:#006330;
+/* CARD */
+.form .card{
   border:none;
+  border-radius:20px;
+  padding:40px;
+  background:#ffffff;
+  box-shadow:0 25px 60px rgba(0,0,0,0.08);
+}
+
+/* TÍTULO */
+.form .card h4{
+  text-align:center;
+  font-size:1.8rem;
   font-weight:700;
-  padding:12px;
-  transition:0.3s;
+  margin-bottom:35px;
+  color:#1a1a1a;
+}
+
+/* LABEL */
+.form-label{
+  font-weight:600;
+  color:#333;
+  margin-bottom:6px;
+}
+
+/* INPUT WRAPPER (para posicionar ícone) */
+.input-wrapper{
+  position:relative;
+}
+
+/* ÍCONE */
+.input-wrapper i{
+  position:absolute;
+  left:14px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:16px;
+  color:#777;
+}
+
+/* INPUTS */
+.form-control,
+.form-select{
+  width:100%;
+  border-radius:14px;
+  border:1px solid #e3e3e3;
+  padding:14px 16px 14px 40px;
+  font-size:0.95rem;
+  background:#fafafa;
+  transition:all 0.25s ease;
+}
+
+/* ANIMAÇÃO AO CLICAR */
+.form-control:focus,
+.form-select:focus{
+  background:#fff;
+  border-color:#90c940;
+  box-shadow:0 0 0 4px rgba(144,201,64,0.2);
+  transform:scale(1.01);
+}
+
+/* TEXTAREA */
+textarea.form-control{
+  resize:none;
+  min-height:170px;
+  padding-left:16px;
+}
+
+/* BOTÃO */
+.btn-success{
+  width:100%;
+  background:linear-gradient(135deg,#006330,#90c940);
+  border:none;
+  border-radius:14px;
+  padding:14px;
+  font-weight:700;
+  font-size:1rem;
+  margin-top:10px;
+  transition:all 0.3s ease;
 }
 
 .btn-success:hover{
-  background-color:#90c940;
+  transform:translateY(-2px);
+  box-shadow:0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* CARDS */
-
-.cards-container {
-  margin-top: 120px !important; 
-  background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%) !important;
+/* ALERTA */
+.alert-success{
+  border-radius:12px;
 }
 
-/* ANIMAÇÃO DE SUCESSO */
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
+/* CONTADOR */
+.char-counter{
+  text-align:right;
+  font-size:0.8rem;
+  color:#777;
+  margin-top:5px;
 }
 
-.fade-out {
-  opacity: 1;
-  animation: fadeOut 0.5s forwards;
-}
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-@keyframes fadeOut {
-  to { opacity: 0; }
-}
-
-/* RESPONSIVIDADE */
-
+/* RESPONSIVO */
 @media (max-width:768px){
 
-  .fale-conosco{
-    padding-top:100px;
+  .form .card{
+    padding:25px;
   }
-
-  .fale{
-    margin-top:20px;
-  }
-
-  .form{
-    margin-top:30px;
-  }
-
-  .titulo{
-    font-size:32px;
-  }
-
 }
