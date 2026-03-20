@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import chatbotQuestionario from '../../data/chatbotQuestionario.js';
 import './chatbot.css'
 import ChatJanela from "../../components/ChatJanela/index.jsx";
@@ -6,13 +6,22 @@ import ChatJanela from "../../components/ChatJanela/index.jsx";
 function Chatbot() {
 
     const [messages, setMessages] = useState([
-        { from: "bot", text: "Olá 👋 Escolha seu perfil:" },
+        { from: "bot", text: "Olá! 👋 Bem-vindo à AgroViva. Sou seu assistente virtual e estou aqui para te auxiliar.  Escolha seu perfil:" },
         { from: "options", options: ["Agricultor", "Comunidade"] }
     ]);
 
     const [step, setStep] = useState("perfil");
     const [perfil, setPerfil] = useState(null);
     const [categoria, setCategoria] = useState(null);
+
+    const messagesContainerRef = useRef(null);
+
+    useEffect(() => {
+        if (messagesContainerRef.current) {
+            messagesContainerRef.current.scrollTop =
+                messagesContainerRef.current.scrollHeight;
+        }
+    }, [messages]);
 
     function addUserMessage(text) {
         setMessages(prev => [...prev, { from: "user", text }]);
@@ -26,7 +35,6 @@ function Chatbot() {
 
         addUserMessage(opcao);
 
-        // PERFIL
         if (step === "perfil") {
 
             const perfilSelecionado = opcao.toLowerCase();
@@ -44,7 +52,6 @@ function Chatbot() {
             return;
         }
 
-        // CATEGORIA
         if (step === "categoria") {
 
             setCategoria(opcao);
@@ -61,7 +68,6 @@ function Chatbot() {
             return;
         }
 
-        // PERGUNTA
         if (step === "pergunta") {
 
             const item = chatbotQuestionario[perfil][categoria].find(p => p.pergunta === opcao);
@@ -85,7 +91,6 @@ function Chatbot() {
             return;
         }
 
-        // NAVEGAÇÃO
         if (step === "navegacao") {
 
             if (opcao === "Ver outras perguntas") {
@@ -132,12 +137,22 @@ function Chatbot() {
 
     return (
         <div className="chat">
-            <div className="header_chat">AgroChat 🌱</div>
+            <div className="header_chat">
+                <div className="header_texto">
+                    <h1>VivaChat</h1>
+                    <p>Assistente virtual da AgroViva</p>
+                </div>
+            <div className="viva-status">
+                <span className="dot-online" />
+                Online
+            </div>
+            </div>
 
             <ChatJanela
                 messages={messages}
                 step={step}
                 onAction={handleAction}
+                messagesContainerRef={messagesContainerRef}
             />
         </div>
     );

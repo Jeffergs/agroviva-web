@@ -1,14 +1,14 @@
 import ChatMenssagem from "../ChatMenssagem";
 import ChatOpcoes from "../ChatOpcoes";
 
-function ChatJanela({ messages, onAction }) {
+function ChatJanela({ messages, onAction, messagesContainerRef }) {
 
   function handleOptionClick(option) {
     onAction(option);
   }
 
   return (
-    <div className="messages">
+    <div className="messages" ref={messagesContainerRef}>
       {messages.map((msg, index) => {
 
         if (msg.from === "bot" || msg.from === "user") {

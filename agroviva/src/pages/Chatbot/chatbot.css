@@ -17,10 +17,38 @@ body {
 }
 
 .header_chat {
-    background: #1b5e20;
-    color: white;
-    padding: 15px;
-    font-weight: bold;
+      background: #1b5e20;
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.header_texto p {
+    font-size: 18px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 2px;
+}
+
+.dot-online {
+  width: 7px;
+  height: 7px;
+  background: #6ee08b;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+.viva-status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .messages {
@@ -36,7 +64,7 @@ body {
     padding: 10px 14px;
     border-radius: 16px;
     max-width: 75%;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.4;
 }
 
