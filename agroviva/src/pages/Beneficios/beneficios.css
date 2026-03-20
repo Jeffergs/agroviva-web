@@ -1,0 +1,73 @@
+.beneficios-bg {
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: background-image 0.4s ease-in-out;
+}
+
+/* camada branca suave (lado esquerdo) */
+.beneficios-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(248, 253, 249, 0.95) 55%,
+    transparent 55%
+  );
+  z-index: 0;
+}
+
+/* faixa diagonal com overlay verde */
+.beneficios-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  background: rgba(0, 100, 0, 0.3);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+/* garante que o conteúdo fique na frente */
+.beneficios-bg .container {
+  position: relative;
+  z-index: 1;
+}
+.filtro-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #e9f5ec;
+  border-radius: 50px;
+  padding: 5px;
+}
+.filtro-btn {
+  flex: 1; /* 🔥 ambos com mesmo tamanho */
+  border: none;
+  border-radius: 50px;
+  padding: 10px 0;
+  font-weight: bold;
+  background: transparent;
+  color: #1a4731;
+  transition: all 0.3s ease;
+}
+
+/* botão ativo */
+.filtro-btn.ativo {
+  background: linear-gradient(90deg, #1f7a3b, #6cc24a);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* hover suave */
+.filtro-btn:hover {
+  opacity: 0.9;
+}

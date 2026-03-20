@@ -1,41 +1,57 @@
 import CardBeneficio from "../../components/CardBeneficio";
 import { beneficiosAgroviva } from "../../data/beneficiosAgroviva";
 import { useState } from "react";
+import "./beneficios.css";
+import fundoComunidade from "../../assets/fundo-comunidade-ben.jpg";
+import fundoAgricultor from "../../assets/fundo-agricultor-ben.jpg";
 
 function Beneficios() {
   const [tipoBeneficio, setTipoBeneficio] = useState("comunidade");
 
+  const imagemAtual =
+    tipoBeneficio === "comunidade" ? fundoComunidade : fundoAgricultor;
+
   return (
-    <main className="py-5" style={{ backgroundColor: "#f8fdf9" }}> 
-      <div className="container"> 
-        
+    <main
+      className="py-5 beneficios-bg"
+      style={{
+        backgroundImage: `url(${imagemAtual})`,
+      }}
+    >
+      <div className="container">
         <div className="text-center mb-5">
-          <h1 className="fw-bold display-5" style={{ color: "#1a4731" }}>Benefícios</h1>
-          <p className="text-muted">Escolha o seu perfil para ver as vantagens exclusivas</p>
+          <h1 className="fw-bold display-5" style={{ color: "#1a4731" }}>
+            Benefícios
+          </h1>
+          <p className="text-muted">
+            Escolha o seu perfil para ver as vantagens exclusivas
+          </p>
         </div>
 
-        {/* Seleção de Perfil (Filtros) */}
-        <div className="d-flex justify-content-center gap-3 mb-5">
+        {/* Seleção de Perfil */}
+        <div className="filtro-container mb-5">
           <button
-            className={`btn px-4 py-2 rounded-pill fw-bold transition-all ${
-              tipoBeneficio === "comunidade" ? "btn-success shadow" : "btn-outline-success"
+            className={`filtro-btn ${
+              tipoBeneficio === "comunidade" ? "ativo" : ""
             }`}
             onClick={() => setTipoBeneficio("comunidade")}
           >
-           Comunidade
+            <i className="bi bi-house-fill me-2"></i>
+            Comunidade
           </button>
 
           <button
-            className={`btn px-4 py-2 rounded-pill fw-bold transition-all ${
-              tipoBeneficio === "agricultor" ? "btn-success shadow" : "btn-outline-success"
+            className={`filtro-btn ${
+              tipoBeneficio === "agricultor" ? "ativo" : ""
             }`}
             onClick={() => setTipoBeneficio("agricultor")}
           >
+            <i className="bi bi-leaf-fill me-2"></i>
             Agricultor
           </button>
         </div>
 
-        {/* Grid de Cards */}
+        {/* Cards */}
         <section>
           <div className="row g-4 justify-content-center">
             {beneficiosAgroviva
