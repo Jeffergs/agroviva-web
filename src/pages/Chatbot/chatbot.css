@@ -274,7 +274,7 @@
     .chat-page {
         height: 100dvh;
     }
-
+    
     .chat {
         max-width: 100%;
         box-shadow: none;
@@ -283,7 +283,7 @@
     .messages {
         padding: 20px 16px;
         gap: 16px;
-        margin: 0w;
+        margin: 0;
     }
 
     .bubble {
