@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
 import Layout from "./components/Layout"
@@ -8,7 +8,7 @@ import ImpactoSocial from "./pages/ImpactoSocial"
 import Beneficios from "./pages/Beneficios"
 import Chatbot from "./pages/Chatbot";
 import FaleConosco from "./pages/FaleConosco/FaleConosco";
-
+import ChatbotButton from './components/ChatBotao';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="/fale" element={<FaleConosco />} />
         </Route>
       </Routes>
+      <ChatbotButton />
     </BrowserRouter>
   );
 }
