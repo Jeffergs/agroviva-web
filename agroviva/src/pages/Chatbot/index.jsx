@@ -170,7 +170,7 @@ function Chatbot() {
                                     <div className="bubble user">{msg.text}</div>
                                     <span className="timestamp">{msg.time}</span>
                                 </div>
-                                <div className="user-avatar-sm">U</div>
+                                <div className="user-avatar-sm">🧑‍🌾</div>
                             </div>
                         );
 
