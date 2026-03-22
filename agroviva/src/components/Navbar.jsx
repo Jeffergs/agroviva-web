@@ -1,68 +1,147 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 import logoIcon from "../assets/Logo_AgroViva1.PNG";
+import "./Navbar.css";
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Fecha o menu quando muda de rota
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
+  // Fecha ao clicar fora
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
+
+  const closeMenu = () => setMenuOpen(false);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
   return (
     <header className="topbar">
-      <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-        <div className="container">
-          {/* Logo */}
-          <Link className="navbar-brand d-flex align-items-center" to="/">
-            <img
-              src={logoIcon}
-              alt="Logo AgroViva Web"
-              className="me-2"
-              style={{ width: "35px", height: "34px", borderRadius: "8px" }}
-            />
-            <span className="fw-bold text-success">AgroViva Web</span>
-          </Link>
+      <nav className={`navbar-custom ${scrolled ? "navbar-scrolled" : ""}`}>
+        <div className="container nav-wrapper">
+          {/* Desktop */}
+          <div className="nav-desktop">
+            <div className="nav-left">
+              <Link className="nav-link" to="/">
+                Home
+              </Link>
 
-          {/* Botão mobile */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+              <Link className="nav-link" to="/impacto">
+                Impacto Social
+              </Link>
+            </div>
 
-          {/* Links */}
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul className="navbar-nav gap-lg-3">
-              <li className="nav-item">
-                <Link className="nav-link fw-bold text-success" to="/">
+            <div className="nav-center">
+              <Link className="navbar-brand-custom" to="/">
+                <img
+                  src={logoIcon}
+                  alt="Logo AgroViva Web"
+                  className="brand__logo"
+                />
+                <span className={`brand__text ${scrolled ? "show-text" : "hide-text"}`}>
+  AgroViva Web
+</span>
+              </Link>
+            </div>
+
+            <div className="nav-right">
+              <Link className="nav-link" to="/beneficios">
+                Benefícios
+              </Link>
+
+              <Link className="nav-link" to="/chatbot">
+                Chatbot
+              </Link>
+
+              <Link className="nav-link nav-contact" to="/fale">
+                Fale Conosco
+              </Link>
+            </div>
+          </div>
+
+          {/* Mobile */}
+          <div className="nav-mobile" ref={mobileMenuRef}>
+            <div className="nav-mobile-top">
+              <Link className="navbar-brand-custom" to="/" onClick={closeMenu}>
+                <img
+                  src={logoIcon}
+                  alt="Logo AgroViva Web"
+                  className="brand__logo"
+                />
+                <span className="brand__text">AgroViva Web</span>
+              </Link>
+
+              <button
+  className={`custom-toggler ${menuOpen ? "open" : ""}`}
+  type="button"
+  onClick={toggleMenu}
+>
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+            </div>
+
+            <div className={`mobile-menu ${menuOpen ? "show" : ""}`}>
+              <div className="mobile-links">
+                <Link className="nav-link" to="/" onClick={closeMenu}>
                   Home
                 </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/impacto">
+                <Link className="nav-link" to="/impacto" onClick={closeMenu}>
                   Impacto Social
                 </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/beneficios">
+                <Link className="nav-link" to="/beneficios" onClick={closeMenu}>
                   Benefícios
                 </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/chatbot">
+                <Link className="nav-link" to="/chatbot" onClick={closeMenu}>
                   Chatbot
                 </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link" to="/fale">
+                <Link
+                  className="nav-link nav-contact"
+                  to="/fale"
+                  onClick={closeMenu}
+                >
                   Fale Conosco
                 </Link>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
