@@ -1,6 +1,6 @@
-import "./CardBeneficio.css"
+import "./cardBeneficio.css"
 
-function CardBeneficio({ icone, alt, titulo, descricao }) {
+function CardBeneficio({ icone, titulo, descricao }) {
   return (
     <div className="agri-card d-flex align-items-start gap-3 p-3 rounded-3 h-100">
       <div className="agri-icon">
