@@ -1,9 +1,14 @@
 .corpo {
+  background-color: #f5f0e8;
+  background-image: radial-gradient(circle at 10% 20%, rgba(138, 184, 127, 0.18) 0%, transparent 50%), radial-gradient(circle at 90% 80%, rgba(196, 132, 58, 0.10) 0%, transparent 45%);
+  min-height: 100vh;
+
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 80px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -15,5 +20,3 @@
     padding: 2rem 1rem;
   }
 }
-
-
