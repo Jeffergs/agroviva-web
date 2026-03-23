@@ -1,0 +1,246 @@
+body {
+background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%);
+  background-attachment: fixed;
+  color: #333;
+}
+
+#userwayAccessibilityIcon,
+.userway_buttons_wrapper,
+.userway-widget,
+.userway-accessibility-widget {
+  position: fixed !important;
+  right: 10px !important;
+  bottom: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+}
+
+@media (max-width: 768px) {
+  #userwayAccessibilityIcon,
+  .userway_buttons_wrapper,
+  .userway-widget,
+  .userway-accessibility-widget {
+    right: 10px !important;
+    bottom: 10px !important;
+  }
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background: #fff;
+  border-bottom: 1px solid #e6ebf0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.brand__logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+}
+
+.navbar-brand span {
+  color: #006330;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.navbar-nav .nav-link {
+  color: #141a1f !important;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #90c940 !important;
+  opacity: 0.9;
+}
+
+.navbar-nav .nav-link.active {
+  color: #90c940 !important;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-nav {
+  gap: 15px;
+}
+
+.fale-conosco {
+  margin-top: -80px;
+  min-height: 100vh;
+}
+
+.titulo{
+font-size: clamp(28px, 4vw + 8px, 50px);
+text-align: center;
+}
+
+.subtitulo{
+  text-align: center;
+  font-size: clamp(14px, 1.4vw + 8px, 26px);
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.accordion-button {
+  border-radius: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #006330;
+  background-color: #e9f5e9;
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: invert(42%) sepia(91%) saturate(2776%) hue-rotate(98deg) brightness(80%) contrast(120%);
+}
+
+.fale{
+  margin-top: 80px;
+}
+
+.form{
+  margin-top: 150px !important;
+}
+p {
+margin: 0;
+  font-size: 0.9rem;
+}
+
+.cards-container {
+  margin-top: 145px !important; 
+    background: linear-gradient(180deg, #ffffff 0%, #f1f8e9 100%) !important;
+}
+
+/* .card{
+  background-color: #f1f8e9;
+} */
+
+/* Animação suave para mensagem de sucesso */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; }
+}
+
+/* RODAPÉ */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; 
+}
+
+.footer-bg {
+  background: linear-gradient(
+    to right,
+    rgba(196, 196, 196, 1) 0%,
+    rgba(170, 199, 130, 1) 39%,
+    rgba(157, 200, 97, 1) 65%,
+    rgba(144, 201, 64, 1) 100%
+  );
+}
+
+.footer-logo {
+  max-width: 220px;
+  height: auto;  
+  margin-top: -27px; 
+}
+
+footer a:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+footer .bi {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+footer .bi:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    gap: 10px;
+  }
+
+  .navbar-collapse {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) and (max-width: 320px) { 
+    .footer-logo {
+    max-width: 180px;
+    height: auto;
+  }
+  .titulo{
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin-top: 30px !important;
+  }
+}
