@@ -22,10 +22,9 @@ function App() {
           <Route path="/fale" element={<FaleConosco />} />
         </Route>
       </Routes>
+
       <ChatBotao />
     </BrowserRouter>
   );
 }
-
-
 export default App;
