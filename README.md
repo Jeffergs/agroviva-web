@@ -46,19 +46,32 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores famil
 ## 📑 Páginas do projeto
 
 ### [🏠 Página inicial](https://agroviva.vercel.app/) 
-![Home - gif](https://github.com/user-attachments/assets/d7b50bc2-eed2-4daf-9b7f-f87278c231d8)
+<img width="1347" height="610" alt="Screenshot 2026-06-28 at 17-29-00 AgroViva Web" src="https://github.com/user-attachments/assets/2767b5e4-b6cb-4971-a21a-046d7fe96dd0" />
+<img width="1359" height="398" alt="Screenshot 2026-06-28 at 17-29-44 AgroViva Web" src="https://github.com/user-attachments/assets/cec34ef1-1711-4494-a39f-9b7bae0e2103" />
+<img width="1356" height="797" alt="Screenshot 2026-06-28 at 17-33-51 AgroViva Web" src="https://github.com/user-attachments/assets/2ec3c912-f5bf-4d95-8e05-a6a601ac1b18" />
+<img width="1359" height="473" alt="Screenshot 2026-06-28 at 17-34-26 AgroViva Web" src="https://github.com/user-attachments/assets/f13af84f-5ea5-44cd-973b-6d5a12791a54" />
+<img width="1359" height="458" alt="Screenshot 2026-06-28 at 17-31-19 AgroViva Web" src="https://github.com/user-attachments/assets/35464e6e-c6ad-4aa8-8ce3-2564bde635d7" />
 
-### [🌍 Impacto social - vídeo](https://agroviva.vercel.app/impacto) 
-![Impacto social - gif](https://github.com/user-attachments/assets/23c584a9-af71-45cd-bc3a-fdcbe6f62ff1)
+### [🌍 Impacto social](https://agroviva.vercel.app/impacto) 
+<img width="1359" height="427" alt="Screenshot 2026-06-28 at 17-36-52 AgroViva Web" src="https://github.com/user-attachments/assets/3095a96c-ebe6-447a-9468-8e90318003e7" />
+<img width="1359" height="915" alt="Screenshot 2026-06-28 at 17-37-24 AgroViva Web" src="https://github.com/user-attachments/assets/9b518916-0b70-4947-9cf2-d26441928b36" />
+<img width="1359" height="458" alt="Screenshot 2026-06-28 at 17-31-19 AgroViva Web" src="https://github.com/user-attachments/assets/ec13e262-7965-42bd-91d6-fe40e4600b46" />
 
 ### [👩‍🌾 Benefícios](https://agroviva.vercel.app/beneficios) 
-![Beneficios - gif](https://github.com/user-attachments/assets/8f4656ad-a59f-4ec3-b699-8bb83c90c343)
+<img width="1359" height="716" alt="Screenshot 2026-06-28 at 17-39-28 AgroViva Web" src="https://github.com/user-attachments/assets/03898267-8612-4ed3-9c6f-6357a23d91fd" />
+<img width="1359" height="713" alt="Screenshot 2026-06-28 at 17-39-53 AgroViva Web" src="https://github.com/user-attachments/assets/f03cc527-44e0-4a36-925d-633a0116abef" />
+<img width="1359" height="458" alt="Screenshot 2026-06-28 at 17-31-19 AgroViva Web" src="https://github.com/user-attachments/assets/c245ef1d-850c-44c7-be41-610074e31cd0" />
+
 
 ### [🧑‍🤝‍🧑 Chatbot](https://agroviva.vercel.app/chatbot) 
-![Chatbot - gif](https://github.com/user-attachments/assets/173a01b3-dbc8-4d1d-bb2a-3d7bd7c96be1)
+<img width="1359" height="584" alt="Screenshot 2026-06-28 at 17-42-12 AgroViva Web" src="https://github.com/user-attachments/assets/a147ca15-2ed0-4e22-bcb4-a95a260af0f8" />
+<img width="1359" height="458" alt="Screenshot 2026-06-28 at 17-31-19 AgroViva Web" src="https://github.com/user-attachments/assets/a7bd005b-62f0-44b0-a4fb-4fd548aa46b4" />
+
 
 ### [📞 Fale conosco](https://agroviva.vercel.app/fale) 
-![Fale conosco - gif](https://github.com/user-attachments/assets/63690b33-dbb3-457e-9a5b-ff0407cd4e65)
+<img width="1359" height="994" alt="Screenshot 2026-06-28 at 17-44-07 AgroViva Web" src="https://github.com/user-attachments/assets/1060a01b-f039-41b5-9157-ecb3f1d610be" />
+<img width="1359" height="458" alt="Screenshot 2026-06-28 at 17-31-19 AgroViva Web" src="https://github.com/user-attachments/assets/175d0b70-1113-4b96-ac80-e717b1188445" />
+
 
 ---
 
@@ -115,6 +128,7 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores famil
 &nbsp &nbsp &nbsp &nbsp ✅ Página do chatbot <br>
 &nbsp &nbsp &nbsp &nbsp ✅ Ajustes na estrutura do projeto <br>
 &nbsp &nbsp &nbsp &nbsp ✅ Página "Impacto Social" <br>
+&nbsp &nbsp &nbsp &nbsp ✅ Mapa de alertas climáticos interativo (dados mockados)
 </div>
 
 <br>
@@ -122,6 +136,7 @@ O **AgroViva Web** é uma plataforma colaborativa que conecta agricultores famil
 <div>
 👩‍💻Sophia Coelho <br>
 &nbsp &nbsp &nbsp &nbsp ✅ Página "Fale conosco" <br>
+&nbsp &nbsp &nbsp &nbsp ✅ Acessibilidade <br>
 &nbsp &nbsp &nbsp &nbsp ✅ Rodapé (footer) do projeto
 </div>
 
